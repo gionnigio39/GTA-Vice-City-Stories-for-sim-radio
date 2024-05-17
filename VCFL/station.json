@@ -1,0 +1,126 @@
+{
+  "tag": "VCFL",
+  "info": {
+    "title": "VCFL",
+    "genre": "Soul",
+    "logo": "logo.png",
+    "dj": "DJ: Pat Floyd"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "path": "Vcfl.m4a",
+          "duration": 534
+        },
+        {
+          "path": "Vcfl.m4a",
+          "duration": 534
+        }        
+      ]
+    },
+    {
+      "tag": "general",
+      "files": [
+        {
+          "path": "Vcfl.m4a",
+          "duration": 534
+        },
+        {
+          "path": "Vcfl.m4a",
+          "duration": 534
+        },
+        {
+          "path": "Vcfl.m4a",
+          "duration": 534
+        }
+      ]
+    },
+    {
+      "tag": "mixin",
+      "files": [
+        {
+          "path": "Vcfl.m4a",
+          "duration": 534
+        },
+        {
+          "path": "Vcfl.m4a",
+          "duration": 534
+        },
+        {
+          "path": "Vcfl.m4a",
+          "duration": 534
+        }
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "general"
+    },
+    "fragments": [
+      {
+        "tag": "general",
+        "src": {
+          "type": "group",
+          "groupTag": "general"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "track"
+          }
+        ]
+      },
+      {
+        "tag": "track",
+        "src": {
+          "type": "group",
+          "groupTag": "track"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "general",
+            "probability": 0.333
+          },
+          {
+            "fragmentTag": "track"
+          }
+        ],
+        "mixins": {
+          "pos": [
+            {
+              "tag": "begin",
+              "relativeOffset": 0.03
+            },
+            {
+              "tag": "end",
+              "relativeOffset": 0.97
+            }
+          ],
+          "mix": [
+            {
+              "tag": "mixins",
+              "src": {
+                "type": "group",
+                "groupTag": "mixin"
+              },
+              "condition": {
+                "type": "random",
+                "probability": 0.9
+              },
+              "posVariant": [
+                {
+                  "posTag": "end"
+                },
+                {
+                  "posTag": "begin"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

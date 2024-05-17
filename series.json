@@ -1,0 +1,38 @@
+{
+    "info": {
+        "title": "GTA Vice City Stories Radio",
+        "logo": "logo.png"
+    },
+    "common": {
+        "fileGroups": []
+    },
+    "stations": [
+        {
+            "path": "Emotion 98.3"
+        },
+		{
+            "path": "Flash FM"
+        },
+		{
+            "path": "Fresh FM"
+        },
+		{
+            "path": "Paradise FM"
+        },
+		{
+            "path": "Radio Espantoso"
+        },
+		{
+            "path": "VCFL"
+        },
+		{
+            "path": "VCPR"
+        },
+		{
+            "path": "V-Rock"
+        },
+		{
+            "path": "Wave 103"
+        }
+    ]
+}

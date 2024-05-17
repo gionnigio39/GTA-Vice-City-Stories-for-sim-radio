@@ -1,0 +1,126 @@
+{
+  "tag": "Radio Espantoso",
+  "info": {
+    "title": "Radio Espantoso",
+    "genre": "Latino-Americano",
+    "logo": "logo.png",
+    "dj": "DJ: Hector Hernandez e Frank Rodriguez"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "path": "Radio_Espantoso.m4a",
+          "duration": 1826
+        },
+        {
+          "path": "Radio_Espantoso.m4a",
+          "duration": 1826
+        }        
+      ]
+    },
+    {
+      "tag": "general",
+      "files": [
+        {
+          "path": "Radio_Espantoso.m4a",
+          "duration": 1826
+        },
+        {
+          "path": "Radio_Espantoso.m4a",
+          "duration": 1826
+        },
+        {
+          "path": "Radio_Espantoso.m4a",
+          "duration": 1826
+        }
+      ]
+    },
+    {
+      "tag": "mixin",
+      "files": [
+        {
+          "path": "Radio_Espantoso.m4a",
+          "duration": 1826
+        },
+        {
+          "path": "Radio_Espantoso.m4a",
+          "duration": 1826
+        },
+        {
+          "path": "Radio_Espantoso.m4a",
+          "duration": 1826
+        }
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "general"
+    },
+    "fragments": [
+      {
+        "tag": "general",
+        "src": {
+          "type": "group",
+          "groupTag": "general"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "track"
+          }
+        ]
+      },
+      {
+        "tag": "track",
+        "src": {
+          "type": "group",
+          "groupTag": "track"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "general",
+            "probability": 0.333
+          },
+          {
+            "fragmentTag": "track"
+          }
+        ],
+        "mixins": {
+          "pos": [
+            {
+              "tag": "begin",
+              "relativeOffset": 0.03
+            },
+            {
+              "tag": "end",
+              "relativeOffset": 0.97
+            }
+          ],
+          "mix": [
+            {
+              "tag": "mixins",
+              "src": {
+                "type": "group",
+                "groupTag": "mixin"
+              },
+              "condition": {
+                "type": "random",
+                "probability": 0.9
+              },
+              "posVariant": [
+                {
+                  "posTag": "end"
+                },
+                {
+                  "posTag": "begin"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
