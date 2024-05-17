@@ -81,7 +81,7 @@
         "nextFragment": [
           {
             "fragmentTag": "general",
-            "probability": 0.333
+            "probability": 0.0
           },
           {
             "fragmentTag": "track"
@@ -107,7 +107,7 @@
               },
               "condition": {
                 "type": "random",
-                "probability": 0.9
+                "probability": 0.0
               },
               "posVariant": [
                 {
